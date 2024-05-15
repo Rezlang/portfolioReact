@@ -1,0 +1,10 @@
+.resume {
+    color: rgb(128, 128, 128);
+    text-decoration: underline;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .resume:hover {
+    color: rgba(var(--accent), 1);
+  }

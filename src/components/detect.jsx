@@ -3,15 +3,6 @@ import PropTypes from 'prop-types';
 import BaseLayout from './layouts/DemoLayout';
 
 const Demo = ({ title }) => {
-  const handleSubmit = (files) => {
-    // Logic to create a new user...
-    console.log('Form submitted with:', files);
-  };
-
-  const updateUploadedFiles = (files) => {
-    // Logic to update the uploaded files...
-    console.log('Uploaded files:', files);
-  };
 
   return (
     <BaseLayout title={title}>

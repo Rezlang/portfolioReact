@@ -1,0 +1,39 @@
+body {
+    padding: 5em;
+    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+    background-color: #002731;
+    padding-top: 10em;
+  }
+  
+  h1 {
+    font-size: 5em;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  h1 span span {
+    position: relative;
+    animation: move-text-color 0.75s forwards;
+    bottom: -1em;
+    opacity: 0;
+  }
+  
+  @keyframes move-text-color {
+    0% {
+      bottom: -0.2em;
+      opacity: 1;
+      color: rgb(var(--accent-light));
+    }
+    
+    50% {
+      bottom: 0.2em;
+      opacity: 1;
+      color: rgb(var(--accent));
+    }
+  
+    100% {
+      bottom: 0;
+      opacity: 1;
+      color: rgb(var(--accent-light));
+    }
+  }

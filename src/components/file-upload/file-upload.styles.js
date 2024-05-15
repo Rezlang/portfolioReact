@@ -4,13 +4,18 @@ import styled from "styled-components";
 export const FileUploadContainer = styled.section`
   position: relative;
   margin: 25px 0 15px;
-  border: 2px dotted lightgray;
+  border: 2px dashed grey;
+  transition: border 1s ease;
   padding: 35px 20px;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: rgb(var(--card-background-grey));
+
+  &:hover {
+    border: 2px dashed rgb(var(--accent-light));
+  }
 `;
 
 export const FormField = styled.input`
@@ -25,6 +30,7 @@ export const FormField = styled.input`
   right: 0;
   bottom: 0;
   opacity: 0;
+  curser: pointer;
 
   &:focus {
     outline: none;
@@ -40,17 +46,19 @@ export const InputLabel = styled.label`
 `;
 
 export const DragDropText = styled.p`
+  font-family: "Roboto Mono", monospace;
   font-weight: bold;
-  letter-spacing: 2.2px;
+  letter-spacing: 1px;
   margin-top: 0;
   text-align: center;
+  color: rgb(var(--accent-light));
 `;
 
 export const UploadFileBtn = styled.button`
   box-sizing: border-box;
   appearance: none;
   background-color: transparent;
-  border: 2px solid #3498db;
+  border: 2px solid rgb(var(--accent));
   cursor: pointer;
   font-size: 1rem;
   line-height: 1;
@@ -59,12 +67,12 @@ export const UploadFileBtn = styled.button`
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 6px;
-  color: #3498db;
+  color: rgb(var(--accent));
   position: relative;
   overflow: hidden;
   z-index: 1;
   transition: color 250ms ease-in-out;
-  font-family: "Open Sans", sans-serif;
+  font-family: inhert;
   width: 45%;
   display: flex;
   align-items: center;
@@ -80,7 +88,7 @@ export const UploadFileBtn = styled.button`
     transform: translateX(-50%);
     width: 0;
     height: 100%;
-    background: #3498db;
+    background: rgb(var(--accent));
     z-index: -1;
     transition: width 250ms ease-in-out;
   }
@@ -109,7 +117,7 @@ export const UploadFileBtn = styled.button`
   }
 
   &:hover {
-    color: #fff;
+    color: rgb(var(--accent-light));
     outline: 0;
     background: transparent;
 
@@ -132,16 +140,20 @@ export const UploadFileBtn = styled.button`
 
 export const FilePreviewContainer = styled.article`
   margin-bottom: 35px;
-
+  min-width: 100%;
   span {
     font-size: 14px;
+    color: rgb(var(--accent-light))
   }
 `;
 
 export const PreviewList = styled.section`
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: 10px;
+  gap: 2%;
 
   @media only screen and (max-width: 400px) {
     flex-direction: column;
@@ -166,6 +178,14 @@ export const FileMetaData = styled.div`
     margin-top: auto;
     display: flex;
     justify-content: space-between;
+  }
+
+  span {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 `;
 

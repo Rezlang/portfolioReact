@@ -1,28 +1,42 @@
 // DemoLayout.js
-import React from 'react';
+import React, {useState} from 'react';
 
 import FileUpload from '../file-upload/file-upload';
 
 import Layout from './Layout';
 
 const DemoLayout = ({title, children}) => {
-  const handleSubmit = (files) => {
+  const [uploadImages, setUploadImages] = useState({
+    imgs: []
+  });
+
+  const handleSubmit = (event) => {
     // Logic to create a new user...
-    console.log('Form submitted with:', files);
+    event.preventDefault();
+    console.log('Form submitted with:', uploadImages);
+    
+  };
+
+  const updateUploadedFiles = (files) => {
+    // Logic to update the uploaded files...
+    console.log('Uploaded files:', files);
+    setUploadImages({...uploadImages, imgs: files})
   };
 
   return (
     <Layout title={title}>
       <main>
-        
-        <div className = 'center-box'>{children} </div>
-          <div className="file-upload-box">
-            <FileUpload
-              accept=".jpg,.png,.jpeg"
-              label="Create New User"
-              multiple
-              onSubmit={handleSubmit}
-            />
+        <div className='center-box'>{children} 
+        <form onSubmit={handleSubmit}>
+          <FileUpload
+            accept=".jpg,.png,.jpeg"
+            label="Create New User"
+            multiple
+            onSubmit={handleSubmit}
+            updateFilesCb={updateUploadedFiles}
+          />
+          <button type="submit">Create New User</button>
+        </form>
         </div>
       </main>
       <style>{`
@@ -40,13 +54,6 @@ const DemoLayout = ({title, children}) => {
             padding: 2rem;
             margin-bottom: 2rem;
             max-width: 800px;
-            width: 100%;
-          }
-          .file-upload-box {
-            background-color: rgba(var(--card-background-grey));
-            border-radius: 8px;
-            padding: 1rem;
-            max-width: 400px;
             width: 100%;
           }
         `} </style>

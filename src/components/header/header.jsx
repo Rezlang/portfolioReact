@@ -4,12 +4,14 @@ import React from 'react';
 const Header = () => {
   return (
     <header className='header'>
-      <a className='logo' href='/' > Josh Moskoff</a>
-      <nav className='navigation'>
-          <button>Projects</button>
-          <button>Experience</button>
-          <button>Demos</button>
-      </nav>
+      <div className='content'>
+        <a className='logo' href='/' > Josh Moskoff</a>
+        <nav className='navigation'>
+            <button>Projects</button>
+            <button>Experience</button>
+            <button>Demos</button>
+        </nav>
+      </div>
     </header>);
 };
 

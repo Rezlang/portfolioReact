@@ -5,6 +5,7 @@ import classes from './jobs.css';
 import rpiLogo from '../../assets/images/rpi.png';
 import factsetLogo from '../../assets/images/factset.jpeg';
 import ntopLogo from '../../assets/images/ntop.png';
+import ResumeText from '../resumeText/resumeText';
 
 
 export default function Jobs() {
@@ -25,18 +26,48 @@ export default function Jobs() {
       </Tabs.List>
 
       <Tabs.Panel value="factset">
-        <h2>FactSet Research Systems Inc.</h2>
-        <p>Software Engineering Intern</p>
+        <div class='jobPanel'>
+          <h2>FactSet Research Systems Inc.</h2>
+          <h3>Software Engineering Intern</h3>
+          <p>
+            <ul>
+              <li>Internship from May 28th to August 16th, 2024</li>
+            </ul>
+          </p>
+            <ResumeText />
+        </div>
       </Tabs.Panel>
 
       <Tabs.Panel value="scorec">
+      <div class='jobPanel'>
         <h2>RPI Scientific Computation Research Center</h2>
-        <p>Undergraduate Research Assistant</p>
+        <h3>Undergraduate Research Assistant</h3>
+        <p>
+          <ul>
+            <li>Designed 3d Bezier mesh display and simulation</li>
+            <li>Displayed using Qt and custom Libraries</li>
+            <li>Mesh logic and calculations using C++ and Rust</li>
+            <li>Experience with Github Actions</li>
+          </ul>
+        </p>
+        <ResumeText />
+      </div>
       </Tabs.Panel>
 
       <Tabs.Panel value="ntop">
+      <div class='jobPanel'>
         <h2>nTopology Inc.</h2>
-        <p>Software Engineering Intern</p>
+        <h3>Software Engineering Intern</h3>
+        <p>
+          <ul>
+            <li>Development of autocomplete engine</li>
+            <li>Created custom search/sort/filter feature for visual function blocks</li>
+            <li>Frontend using Qt</li>
+            <li>High speed modern C++ codebase</li>
+          </ul>
+        </p>
+        <ResumeText />
+      </div>
       </Tabs.Panel>
     </Tabs>
   );

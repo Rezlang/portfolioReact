@@ -56,14 +56,14 @@ const FileUpload = ({
     if (newFiles.length) {
       let updatedFiles = addNewFiles(newFiles);
       setFiles(updatedFiles);
-      // callUpdateFilesCb(updatedFiles);
+      callUpdateFilesCb(updatedFiles);
     }
   };
 
   const removeFile = (fileName) => {
     delete files[fileName];
     setFiles({ ...files });
-    // callUpdateFilesCb({ ...files });
+    callUpdateFilesCb({ ...files });
   };
 
   return (
@@ -85,7 +85,6 @@ const FileUpload = ({
         />
       </FileUploadContainer>
       <FilePreviewContainer>
-        <span>To Upload</span>
         <PreviewList>
           {Object.keys(files).map((fileName, index) => {
             let file = files[fileName];

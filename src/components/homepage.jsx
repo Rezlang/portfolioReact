@@ -2,14 +2,15 @@ import React from 'react';
 import Card from './card.tsx';
 import Jobs from './jobs/jobs.jsx';
 import Layout from './layouts/Layout';
+import BouncingWords from './bouncingWords/bouncingWords.jsx';
 
 const Home = () => {
   return (
     <Layout title="Welcome">
       <main>
-        <h1>
-          Welcome to <span className="text-gradient">Astro</span>
-        </h1>
+        <div id="bounce">
+          <BouncingWords />
+        </div>
         <div className="headliner-container">
           <span className="wave">👋</span>
           <div className="headliner">
@@ -101,7 +102,6 @@ const Home = () => {
         {`
           main {
             margin: auto;
-            padding: 1rem;
             max-width: 100%;
             color: white;
             font-size: 20px;
@@ -110,7 +110,6 @@ const Home = () => {
 
           .astro-a {
             position: absolute;
-            top: -32px;
             left: 50%;
             transform: translatex(-50%);
             width: 220px;

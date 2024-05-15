@@ -102,6 +102,7 @@ const Card: React.FC<Props> = ({ href, title, body, skills, imgPath }) => {
           transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1),
             background-color 0.3s ease;
           box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+          box-shadow: ;
           opacity: 0.7;
           
         }
