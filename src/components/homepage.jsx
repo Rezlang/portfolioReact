@@ -18,7 +18,7 @@ const Home = () => {
             is currently pursuing a bachelors of computer science at RPI.
           </div>
         </div>
-        <ul className="link-card-grid">
+        <ul className="link-card-grid" id="projects-grid">
           <Card
             href="https://docs.astro.build/"
             title="Portfolio Website"
@@ -96,7 +96,8 @@ const Home = () => {
             imgPath="../../computerVision.png"
           />
         </ul>
-        <Jobs />
+        <div id='job-section'/>
+        <Jobs/>
       </main>
       <style>
         {`
