@@ -11,6 +11,7 @@ const Layout = ({ title, children }) => {
         {`
           * {
             box-sizing: border-box;
+            
           }
           :root {
             --card-background-grey: 35,38,45,0.7;
@@ -30,7 +31,7 @@ const Layout = ({ title, children }) => {
             font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
           }
           .main-content {
-            width: 50%;
+            width: 60%;
             margin: 0 auto;
           }
           main {
@@ -40,7 +41,7 @@ const Layout = ({ title, children }) => {
             justify-content: center;
             min-height: 100vh;
           }
-          @media screen and (max-width: 960px) {
+          @media screen and (max-width: 1200px) {
             .main-content {
               width: 80%;
             }

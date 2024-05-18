@@ -3,6 +3,7 @@ import Card from './card.tsx';
 import Jobs from './jobs/jobs.jsx';
 import Layout from './layouts/Layout';
 import BouncingWords from './bouncingWords/bouncingWords.jsx';
+import DemoCard from './demoCard/demoCard.jsx';
 
 const Home = () => {
   return (
@@ -64,40 +65,22 @@ const Home = () => {
             title="Lightweight"
             body="A personal weightlifting application"
             skills={[
-              {
+            {
                 name: 'Dart',
                 icon: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Dart_logo.png',
-              },
-              {
+            },
+            {
                 name: 'Flutter',
                 icon: 'https://storage.googleapis.com/cms-storage-bucket/4fd5520fe28ebf839174.svg',
-              },
+            },
             ]}
             imgPath="../../lightweight.png"
           />
-          <Card
-            href="/detect"
-            title="Computer Vision and Neural Network Demos"
-            body="Assorted open source demos to play around with."
-            skills={[
-              {
-                name: 'Pytorch',
-                icon: 'https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg',
-              },
-              {
-                name: 'Numpy',
-                icon: 'https://raw.githubusercontent.com/numpy/numpy/64676baf423c3e1c53b37ae413c3ca6aaecc642a/branding/logo/logomark/numpylogoicon.svg',
-              },
-              {
-                name: 'OpenCV',
-                icon: 'https://github.com/opencv/opencv/wiki/logo/OpenCV_logo_no_text.png',
-              },
-            ]}
-            imgPath="../../computerVision.png"
-          />
+          <DemoCard/>
         </ul>
-        <div id='job-section'/>
-        <Jobs/>
+        <div id='job-section'>
+        <Jobs />
+        </div>
       </main>
       <style>
         {`
@@ -185,9 +168,10 @@ const Home = () => {
             grid-template-columns: 1fr;  /* Default to one column on smaller screens */
             gap: 2rem;
             padding: 0;
+            overflow: shown;
           }
           
-          @media (min-width: 600px) { /* Adjust the breakpoint as needed */
+          @media (min-width: 700px) { /* Adjust the breakpoint as needed */
             .link-card-grid {
               grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
             }
