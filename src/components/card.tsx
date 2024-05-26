@@ -9,14 +9,15 @@ interface Props {
   title: string;
   body: string;
   href: string;
+  target: string;
   imgPath: string;
   skills: Skill[];
 }
 
-export const Card: React.FC<Props> = ({ href, title, body, skills, imgPath }) => {
+export const Card: React.FC<Props> = ({ href, target, title, body, skills, imgPath }) => {
   return (
     <li className="link-card">
-      <a href={href}>
+      <a href={href} target={target}>
         <h2>
           {title}
           <span>&rarr;</span>

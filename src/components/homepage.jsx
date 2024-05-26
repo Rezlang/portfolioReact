@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import Card from './card.tsx';
 import Jobs from './jobs/jobs.jsx';
 import Layout from './layouts/Layout';
@@ -12,16 +12,10 @@ const Home = () => {
         <div id="bounce">
           <BouncingWords />
         </div>
-        <div className="headliner-container">
-          <span className="wave">👋</span>
-          <div className="headliner">
-            Josh is a multi-talented full stack developer, with a focus on deep learning, NLP, and Computer Vision. He
-            is currently pursuing a bachelors of computer science at RPI.
-          </div>
-        </div>
+        <DemoCard/>
         <ul className="link-card-grid" id="projects-grid">
           <Card
-            href="https://docs.astro.build/"
+            href=""
             title="Portfolio Website"
             body="This beautiful personal project website!"
             skills={[
@@ -37,7 +31,7 @@ const Home = () => {
             imgPath="../../computerVision.png"
           />
           <Card
-            href="https://astro.build/integrations/"
+            href="https://github.com/AI-and-Blockchain/S24_Proof_of_Vision_Tokens" target="_blank"
             title="Proof of Vision Token"
             body="A dividend paying- Ethereum based- token that can be mined by classifying images"
             skills={[
@@ -61,7 +55,7 @@ const Home = () => {
             imgPath="../../blockchain.png"
           />
           <Card
-            href="https://astro.build/themes/"
+            href="https://github.com/kaanlus/LightWeight" target="_blank"
             title="Lightweight"
             body="A personal weightlifting application"
             skills={[
@@ -76,7 +70,26 @@ const Home = () => {
             ]}
             imgPath="../../lightweight.png"
           />
-          <DemoCard/>
+          <Card
+            href="/"
+            title="Computer Vision and Neural Network Demos"
+            body="Assorted open source demos to play around with."
+            skills={[
+            {
+                name: 'Pytorch',
+                icon: 'https://upload.wikimedia.org/wikipedia/commons/1/10/PyTorch_logo_icon.svg',
+            },
+            {
+                name: 'Numpy',
+                icon: 'https://raw.githubusercontent.com/numpy/numpy/64676baf423c3e1c53b37ae413c3ca6aaecc642a/branding/logo/logomark/numpylogoicon.svg',
+            },
+            {
+                name: 'OpenCV',
+                icon: 'https://github.com/opencv/opencv/wiki/logo/OpenCV_logo_no_text.png',
+            },
+            ]}
+            imgPath="../../computerVision.png"
+          />
         </ul>
         <div id='job-section'>
         <Jobs />
@@ -101,27 +114,7 @@ const Home = () => {
             z-index: -1;
           }
 
-          .wave {
-            font-size: 3rem;
-            animation-name: wave-animation;
-            animation-duration: 2.5s;
-            animation-iteration-count: infinite;
-            transform-origin: 70% 70%;
-            display: inline-block;
-            margin-left: 2%;
-            margin-right: 5%;
-          }
-
-          @keyframes wave-animation {
-            0% { transform: rotate(0.0deg) }
-            10% { transform: rotate(14.0deg) }
-            20% { transform: rotate(-8.0deg) }
-            30% { transform: rotate(14.0deg) }
-            40% { transform: rotate(-4.0deg) }
-            50% { transform: rotate(10.0deg) }
-            60% { transform: rotate(0.0deg) }
-            100% { transform: rotate(0.0deg) }
-          }
+          
 
           h1 {
             font-size: 4rem;
@@ -139,29 +132,7 @@ const Home = () => {
             background-position: 0%;
           }
 
-          .headliner-container {
-            display: flex;
-            align-items: center;
-            margin-bottom: 2rem;
-            border: 1px solid rgba(var(--accent-light), 25%);
-            background: var(--card-background-purple);
-            padding: 1rem;
-            border-radius: 8px;
-            font-family: inhert;
-            font-size: 1.1rem;
-          }
-
-          .headliner code {
-            font-size: 0.8em;
-            font-weight: bold;
-            background: rgba(var(--accent-light), 12%);
-            color: rgb(var(--accent-light));
-            border-radius: 4px;
-          }
-
-          .headliner strong {
-            color: rgb(var(--accent-light));
-          }
+          
 
           .link-card-grid {
             display: grid;
