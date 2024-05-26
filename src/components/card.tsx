@@ -22,7 +22,7 @@ export const Card: React.FC<Props> = ({ href, target, title, body, skills, imgPa
           {title}
           <span>&rarr;</span>
         </h2>
-        <img src={imgPath} className="card-image" />
+        <img src={imgPath} alt="project photo" className="card-image" />
         <p>{body}</p>
         <div className="skills-container">
           {skills.map((skill) => (
