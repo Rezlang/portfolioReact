@@ -3,7 +3,6 @@ import {
   FileUploadContainer,
   FormField,
   DragDropText,
-  UploadFileBtn,
   FilePreviewContainer,
   ImagePreview,
   PreviewContainer,

@@ -1,5 +1,4 @@
 import { Tabs, rem } from '@mantine/core';
-import { IconPhoto, IconMessageCircle, IconSettings } from '@tabler/icons-react';
 import '@mantine/core/styles.css';
 import classes from './jobs.css';
 import rpiLogo from '../../assets/images/rpi.png';
