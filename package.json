@@ -2,7 +2,7 @@
   "name": "portfolioreact",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rezlang.github.io/portfolioReact",
+  "homepage": "https://rezlang.github.io/portfolioReact/",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "@mantine/core": "^7.9.1",
