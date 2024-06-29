@@ -43,10 +43,6 @@
     margin: 0 0 0 0;
 }
 
-.mantine-Tabs-panel p {
-    padding: 0 0 1rem 0;
-}
-
 .mantine-Tabs-panel li {
     text-align: left;
     padding-left: 1rem;
@@ -55,5 +51,5 @@
 .jobPanel {
     display: flex;
     flex-direction: column;
-    padding: 1% 0 1.5% 0;
+    padding: 1% 2% 4% 0;
 }

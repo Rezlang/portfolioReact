@@ -10,7 +10,7 @@ export default function Jobs() {
 
   return (
     <Tabs color="grey" variant="pills" defaultValue="factset" classNames={{list: classes.list}}>
-      <Tabs.List>
+      <Tabs.List justify="center">
       <Tabs.Tab value="factset" leftSection={<img src={`${process.env.PUBLIC_URL}/factset.jpeg`} style={iconStyle} alt="Factset" />}>
           Factset
         </Tabs.Tab>
@@ -28,7 +28,12 @@ export default function Jobs() {
           <h3>Software Engineering Intern</h3>
           <p>
             <ul>
-              <li>Internship from May 28th to August 16th, 2024</li>
+              <li>Development of a scalable and self-healing solution for data conflation, subscription, and updates. Built
+              to process all FactSet real-time and delayed-time updates from stock exchanges, using elixir, erlang, and
+              AWS.</li>
+              <li>Creation of a composable elixir websocket subprotocol, replaced over 150 lines of subprotocol setup in
+              every implementation of an elixir websocket (dozens of projects)</li>
+              <li>Creation of one page frontend dashboard to view subscription traffic using React</li>
             </ul>
           </p>
             <ResumeText />
@@ -41,10 +46,10 @@ export default function Jobs() {
         <h3>Undergraduate Research Assistant</h3>
         <p>
           <ul>
-            <li>Designed 3d Bezier mesh display and simulation</li>
-            <li>Displayed using Qt and custom Libraries</li>
+            <li>Designed 3d Bezier mesh display and simulation. Capable of detecting invalid intersections and allowing the user to fix the geometry.</li>
+            <li>Displayed using Qt frontend and custom C++ Libraries for the mesh objects</li>
             <li>Mesh logic and calculations using C++ and Rust</li>
-            <li>Experience with Github Actions</li>
+            <li>Experience with Github Actions for publishing and updating deployed version</li>
           </ul>
         </p>
         <ResumeText />
@@ -57,10 +62,10 @@ export default function Jobs() {
         <h3>Software Engineering Intern</h3>
         <p>
           <ul>
-            <li>Development of autocomplete engine</li>
-            <li>Created custom search/sort/filter feature for visual function blocks</li>
-            <li>Frontend using Qt</li>
-            <li>High speed modern C++ codebase</li>
+            <li>Development of compact autocomplete engine </li>
+            <li>Created custom live search feature for visual function blocks with results responding in under 100ms. Capable of sorting and filtering with user input</li>
+            <li>Frontend using Qt in C++, logic using C++</li>
+            <li>Responded to tickets on Jira to fix bugs in C++ platform codebase</li>
           </ul>
         </p>
         <ResumeText />

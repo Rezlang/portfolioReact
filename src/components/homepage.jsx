@@ -8,6 +8,7 @@ import DemoCard from './demoCard/demoCard.jsx';
 const Home = () => {
   return (
     <Layout title="Welcome">
+      <title>Test</title>
       <main>
         <div id="bounce">
           <BouncingWords />

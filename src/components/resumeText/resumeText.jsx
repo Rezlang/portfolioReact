@@ -4,11 +4,10 @@ export default function ResumeText() {
   return (
     <a
       className="resume"
-      href="/Moskoff_Joshua_Resume.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
+      href={`${process.env.PUBLIC_URL}/Moskoff_Joshua_Resume.pdf`}
+      download="Moskoff_Joshua_Resume.pdf"
     >
-      View my resume.
+      Download my resume
     </a>
   );
 }

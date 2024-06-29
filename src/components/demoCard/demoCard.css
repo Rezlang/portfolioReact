@@ -82,12 +82,17 @@
     padding: 1rem;
     border-radius: 8px;
     font-family: inhert;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     height: 130px;
   }
 
+  @media (min-width: 830px) {
+    .headliner-container {
+      font-size: 1.4rem;
+    }
+  }
+
   .headliner code {
-    font-size: 0.8em;
     font-weight: bold;
     background: rgba(var(--accent-light), 12%);
     color: rgb(var(--accent-light));
