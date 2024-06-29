@@ -1,4 +1,4 @@
- import React from 'react';
+import React from 'react';
 import Card from './card.tsx';
 import Jobs from './jobs/jobs.jsx';
 import Layout from './layouts/Layout';
