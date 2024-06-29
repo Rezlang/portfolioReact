@@ -28,7 +28,7 @@ const Home = () => {
                 icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png',
               },
             ]}
-            imgPath="../../computerVision.png"
+            imgPath="${process.env.PUBLIC_URL}/computerVision.png"
           />
           <Card
             href="https://github.com/AI-and-Blockchain/S24_Proof_of_Vision_Tokens" target="_blank"
@@ -52,7 +52,7 @@ const Home = () => {
                 icon: 'https://images.ctfassets.net/t3wqy70tc3bv/57PKzLtfnCqvrvVO9dQy4u/ad6c9e026b77cf59643680bd931ca5c1/Chainlink-logo.png',
               },
             ]}
-            imgPath="../../blockchain.png"
+            imgPath="${process.env.PUBLIC_URL}/blockchain.png"
           />
           <Card
             href="https://github.com/kaanlus/LightWeight" target="_blank"
@@ -68,7 +68,7 @@ const Home = () => {
                 icon: 'https://storage.googleapis.com/cms-storage-bucket/4fd5520fe28ebf839174.svg',
             },
             ]}
-            imgPath="../../lightweight.png"
+            imgPath="${process.env.PUBLIC_URL}/lightweight.png"
           />
           <Card
             href="/"
@@ -88,7 +88,7 @@ const Home = () => {
                 icon: 'https://github.com/opencv/opencv/wiki/logo/OpenCV_logo_no_text.png',
             },
             ]}
-            imgPath="../../computerVision.png"
+            imgPath="${process.env.PUBLIC_URL}/computerVision.png"
           />
         </ul>
         <div id='job-section'>

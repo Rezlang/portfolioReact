@@ -1,9 +1,9 @@
 import { Tabs, rem } from '@mantine/core';
 import '@mantine/core/styles.css';
 import classes from './jobs.css';
-import rpiLogo from '../../assets/images/rpi.png';
-import factsetLogo from '../../assets/images/factset.jpeg';
-import ntopLogo from '../../assets/images/ntop.png';
+const rpiLogo = `${process.env.PUBLIC_URL}/rpi.png`;
+const factsetLogo = `${process.env.PUBLIC_URL}/factset.jpeg`;
+const ntopLogo = `${process.env.PUBLIC_URL}/ntop.png`;
 import ResumeText from '../resumeText/resumeText';
 
 
