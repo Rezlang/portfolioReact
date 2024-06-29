@@ -14,13 +14,13 @@ export default function Jobs() {
   return (
     <Tabs color="grey" variant="pills" defaultValue="factset" classNames={{list: classes.list}}>
       <Tabs.List>
-      <Tabs.Tab value="factset" leftSection={<img src={factsetLogo} style={iconStyle} alt="Factset" />}>
+      <Tabs.Tab value="factset" leftSection={<img src={`${process.env.PUBLIC_URL}/factset.jpeg`} style={iconStyle} alt="Factset" />}>
           Factset
         </Tabs.Tab>
-        <Tabs.Tab value="scorec" leftSection={<img src={rpiLogo} style={iconStyle} alt="RPI SCOREC" />}>
+        <Tabs.Tab value="scorec" leftSection={<img src={`${process.env.PUBLIC_URL}/rpi.png`} style={iconStyle} alt="RPI SCOREC" />}>
           RPI SCOREC
         </Tabs.Tab>
-        <Tabs.Tab value="ntop" leftSection={<img src={ntopLogo} style={iconStyle} alt="Ntop" />}>
+        <Tabs.Tab value="ntop" leftSection={<img src={`${process.env.PUBLIC_URL}/ntop.png`} style={iconStyle} alt="Ntop" />}>
           Ntop
         </Tabs.Tab>
       </Tabs.List>
