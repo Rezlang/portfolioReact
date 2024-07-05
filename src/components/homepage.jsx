@@ -72,7 +72,7 @@ const Home = () => {
             imgPath={`${process.env.PUBLIC_URL}/lightweight.png`}
           />
           <Card
-            href="/"
+            href="https://github.com/Rezlang/ComputationalVision" target="_blank"
             title="Computer Vision and Neural Network Demos"
             body="Assorted open source demos to play around with."
             skills={[

@@ -25,10 +25,16 @@ const Header = () => {
         <nav className='navigation'>
             <button onClick={() => scrollToID('projects-grid', -30)}>Projects</button>
             <button onClick={() => scrollToID('job-section', -30)}>Experience</button>
-            <button>Demos</button>
+            <button onClick={() => openInNewTab('https://github.com/Rezlang/ComputationalVision')}>Demos</button>
+
+
         </nav>
       </div>
     </header>);
 };
+
+  function openInNewTab(url) {
+    window.open(url, '_blank');
+  }
 
 export default Header;
