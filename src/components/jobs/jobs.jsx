@@ -11,8 +11,11 @@ export default function Jobs() {
   return (
     <Tabs color="grey" variant="pills" defaultValue="factset" classNames={{list: classes.list}}>
       <Tabs.List justify="center">
-      <Tabs.Tab value="factset" leftSection={<img src={`${process.env.PUBLIC_URL}/factset.jpeg`} style={iconStyle} alt="Factset" />}>
+        <Tabs.Tab value="factset" leftSection={<img src={`${process.env.PUBLIC_URL}/factset.jpeg`} style={iconStyle} alt="Factset" />}>
           Factset
+        </Tabs.Tab>
+        <Tabs.Tab value="CRAFT" leftSection={<img src={`${process.env.PUBLIC_URL}/craft.png`} style={iconStyle} alt="CRAFT" />}>
+          CRAFT
         </Tabs.Tab>
         <Tabs.Tab value="scorec" leftSection={<img src={`${process.env.PUBLIC_URL}/rpi.png`} style={iconStyle} alt="RPI SCOREC" />}>
           RPI SCOREC
@@ -28,12 +31,28 @@ export default function Jobs() {
           <h3>Software Engineering Intern</h3>
           <p>
             <ul>
-              <li>Development of a scalable and self-healing solution for data conflation, subscription, and updates. Built
-              to process all FactSet real-time and delayed-time updates from stock exchanges, using elixir, erlang, and
-              AWS.</li>
-              <li>Creation of a composable elixir websocket subprotocol, replaced over 150 lines of subprotocol setup in
-              every implementation of an elixir websocket (dozens of projects)</li>
-              <li>Creation of one page frontend dashboard to view subscription traffic using React</li>
+              <li>Development of a scalable and stable-bandwidth solution for real-time data conflation, subscription, and
+updates. Built to process all FactSet real-time and delayed updates from stock exchanges, using Elixir,
+Erlang, and AWS.</li>
+              <li>Created a composable Elixir WebSocket subprotocol, consolidating setup into a reusable component for
+current and future WebSocket implementations.</li>
+              <li>Developed a single-page frontend dashboard to view subscription traffic using React.</li>
+            </ul>
+          </p>
+            <ResumeText />
+        </div>
+      </Tabs.Panel>
+
+      <Tabs.Panel value="CRAFT">
+        <div class='jobPanel'>
+          <h2>Center for Research toward Advancing Financial Technologies</h2>
+          <h3>Research Assistant</h3>
+          <p>
+            <ul>
+              <li>Developed an LLM to automatically convert over-the-counter derivative contracts into Solidity smart
+contracts.</li>
+              <li>Created a smart contract representation of ISDA master agreement for OTC derivatives.</li>
+              <li>Developed a Solidity-based oracle for real-time SEC filing data on the Ethereum blockchain.</li>
             </ul>
           </p>
             <ResumeText />
@@ -43,7 +62,7 @@ export default function Jobs() {
       <Tabs.Panel value="scorec">
       <div class='jobPanel'>
         <h2>RPI Scientific Computation Research Center</h2>
-        <h3>Undergraduate Research Assistant</h3>
+        <h3>Research Assistant</h3>
         <p>
           <ul>
             <li>Designed 3d Bezier mesh display and simulation. Capable of detecting invalid intersections and allowing the user to fix the geometry.</li>
@@ -62,10 +81,9 @@ export default function Jobs() {
         <h3>Software Engineering Intern</h3>
         <p>
           <ul>
-            <li>Development of compact autocomplete engine </li>
-            <li>Created custom live search feature for visual function blocks with results responding in under 100ms. Capable of sorting and filtering with user input</li>
-            <li>Frontend using Qt in C++, logic using C++</li>
-            <li>Responded to tickets on Jira to fix bugs in C++ platform codebase</li>
+            <li>Developed a C++ autocomplete oracle, matching on arbitrary or ranked fields.</li>
+            <li>Created custom search, sort, and filter feature for visual function blocks.</li>
+            <li>Used technologies including modern C++, Qt, CMake, Jenkins, and Jira.</li>
           </ul>
         </p>
         <ResumeText />

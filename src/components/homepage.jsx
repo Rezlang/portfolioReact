@@ -3,7 +3,7 @@ import Card from './card.tsx';
 import Jobs from './jobs/jobs.jsx';
 import Layout from './layouts/Layout';
 import BouncingWords from './bouncingWords/bouncingWords.jsx';
-import DemoCard from './demoCard/demoCard.jsx';
+import FlipCard from './flipCard/flipCard.jsx';
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
         <div id="bounce">
           <BouncingWords />
         </div>
-        <DemoCard/>
+        <FlipCard/>
         <ul className="link-card-grid" id="projects-grid">
           <Card
             href=""
