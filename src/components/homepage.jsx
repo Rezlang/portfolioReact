@@ -52,7 +52,7 @@ const Home = () => {
               },
               {
                 name: 'React',
-                icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png',
+                icon: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
               },
             ]}
             imgPath={`${process.env.PUBLIC_URL}/computerVision.png`}
