@@ -10,7 +10,7 @@ interface Props {
   body: string;
   href: string;
   target: string;
-  imgPath: string;
+  imgPath?: string;
   skills: Skill[];
 }
 
@@ -22,7 +22,7 @@ export const Card: React.FC<Props> = ({ href, target, title, body, skills, imgPa
           {title}
           <span>&rarr;</span>
         </h2>
-        <img src={imgPath} alt="project" className="card-image" />
+        {imgPath && <img src={imgPath} alt="project" className="card-image" />}
         <p>{body}</p>
         <div className="skills-container">
           {skills.map((skill) => (

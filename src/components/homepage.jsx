@@ -16,6 +16,32 @@ const Home = () => {
         <DemoCard/>
         <ul className="link-card-grid" id="projects-grid">
           <Card
+            href="https://github.com/Rezlang/Governance" target="_blank"
+            title="ModelGovernor"
+            body="A modular policy-based LLM governance tool written in python."
+            skills={[
+            {
+                name: 'Python',
+                icon: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg',
+            },
+            ]}
+          />
+          <Card
+            href="https://github.com/Rezlang/stockpositive" target="_blank"
+            title="StockPositive"
+            body="An open source financial news provider with custom news subscriptions based on source and topic."
+            skills={[
+            {
+                name: 'Elixir',
+                icon: 'https://upload.wikimedia.org/wikipedia/commons/9/92/Official_Elixir_logo.png',
+            },
+            {
+                name: 'Erlang',
+                icon: 'https://upload.wikimedia.org/wikipedia/commons/0/04/Erlang_logo.svg',
+            },
+            ]}
+          />
+          <Card
             href=""
             title="Portfolio Website"
             body="This beautiful personal project website!"
@@ -38,7 +64,7 @@ const Home = () => {
             skills={[
               {
                 name: 'Ethereum',
-                icon: 'https://cryptologos.cc/logos/ethereum-eth-logo.png?v=029',
+                icon: 'https://1000logos.net/wp-content/uploads/2023/01/Ethereum-logo.png',
               },
               {
                 name: 'Solidity',

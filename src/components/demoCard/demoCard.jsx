@@ -10,8 +10,7 @@ export const DemoCard = () => {
                         <div className="headliner-container">
                             <span className="wave">👋</span>
                             <div className="headliner">
-                                Josh is a multi-talented full stack developer, with a focus on deep learning, NLP, and Computer Vision. He
-                                is currently pursuing a bachelors of computer science at RPI.
+                                Josh is a multitalented developer focused on AI Engineering and Functional Programming. He enjoys solving tough problems and is currently employed by KPMG.
                             </div>
                         </div>
                     </div>
@@ -21,9 +20,10 @@ export const DemoCard = () => {
                             B.S. in Computer Science
                         </p>
                         <p>
-                            Interfraternity Council President |
-                            Phi Sigma Kappa President
-                            | Society of Phyiscs Students President 
+                            Functional Programming |
+                            AI |
+                            Computer Vision |
+                            Distributed Systems
                         </p>
                     </div>
                 </div>
