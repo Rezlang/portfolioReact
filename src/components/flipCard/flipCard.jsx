@@ -20,8 +20,7 @@ export const FlipCard = () => {
                             <div className="upper">
                                 <span className="wave">👋</span>
                                 <div className="headliner">
-                                    Josh is a multi-talented full stack developer, with a focus on Distributed Systems, and Financial Technologies. He
-                                    is currently pursuing a bachelors of Computer Science with a minor in Economics at RPI.
+                                    Josh is a multitalented developer focused on AI Engineering and Functional Programming. He enjoys solving tough problems and is currently employed by KPMG.
                                 </div>
                             </div>
                             <div className="interaction-text">
@@ -34,9 +33,10 @@ export const FlipCard = () => {
                         <h2>Rensselaer Polytechnic Institute</h2>
                         <p>B.S. in Computer Science</p>
                         <p>
-                            Interfraternity Council President |
-                            Phi Sigma Kappa President |
-                            Society of Physics Students President 
+                            Functional Programming |
+                            AI |
+                            Computer Vision |
+                            Distributed Systems
                         </p>
                         <div className="interaction-text">
                                 <span className="desktop-text">&lt; hover me &gt;</span>
