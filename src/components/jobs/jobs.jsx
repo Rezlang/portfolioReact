@@ -66,7 +66,7 @@ export default function Jobs() {
       <Tabs.Panel value="scorec">
       <div class='jobPanel'>
         <h2>RPI Scientific Computation Research Center</h2>
-        <h3>Undergraduate Research Assistant</h3>
+        <h3>Research Assistant</h3>
         <p>
           <ul>
             <li>Designed 3d Bezier mesh display and simulation. Capable of detecting invalid intersections and allowing the user to fix the geometry.</li>
@@ -85,10 +85,9 @@ export default function Jobs() {
         <h3>Software Engineering Intern</h3>
         <p>
           <ul>
-            <li>Development of compact autocomplete engine </li>
-            <li>Created custom live search feature for visual function blocks with results responding in under 100ms. Capable of sorting and filtering with user input</li>
-            <li>Frontend using Qt in C++, logic using C++</li>
-            <li>Responded to tickets on Jira to fix bugs in C++ platform codebase</li>
+            <li>Developed a C++ autocomplete oracle, matching on arbitrary or ranked fields.</li>
+            <li>Created custom search, sort, and filter feature for visual function blocks.</li>
+            <li>Used technologies including modern C++, Qt, CMake, Jenkins, and Jira.</li>
           </ul>
         </p>
         <ResumeText />

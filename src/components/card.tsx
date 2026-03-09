@@ -128,6 +128,7 @@ export const Card: React.FC<Props> = ({ href, target, title, body, skills, imgPa
 
         .link-card:is(:hover, :focus-within) > a {
           background-color: rgba(35, 38, 45, 0.6);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
         }
 
         .link-card:hover h2 {

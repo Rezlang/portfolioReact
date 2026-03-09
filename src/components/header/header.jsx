@@ -1,4 +1,4 @@
-import './Header.css'; // Assuming you'll use an external CSS file for styling
+import './Header.css';
 import React from 'react';
 
 const Header = () => {
@@ -21,11 +21,11 @@ const Header = () => {
   return (
     <header className='header'>
       <div className='content'>
-        <a className='logo' href='/' > Josh Moskoff</a>
+        <a className='logo' href='https://rezlang.github.io/portfolioReact/' > Josh Moskoff</a>
         <nav className='navigation'>
             <button onClick={() => scrollToID('projects-grid', -30)}>Projects</button>
             <button onClick={() => scrollToID('job-section', -30)}>Experience</button>
-            <button onClick={() => openInNewTab('https://github.com/Rezlang/ComputationalVision')}>Demos</button>
+            <button onClick={() => openInNewTab('https://github.com/Rezlang/')}>Github</button>
 
 
         </nav>

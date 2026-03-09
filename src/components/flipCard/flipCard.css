@@ -1,0 +1,175 @@
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+
+  /* Inner card rotation */
+  .flip-card-inner {
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  /* Hover effect for desktop */
+  @media (min-width: 769px) {
+    .flip-card:hover .flip-card-inner {
+      transform: rotateX(180deg);
+    }
+    .flip-card:hover {
+      transition: box-shadow 0.3s ease-in-out 0.3s;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  /* Mobile toggle using the "flipped" class */
+  .flip-card-inner.flipped {
+    transform: rotateX(180deg);
+  }
+
+  /* Front and back styling */
+  .flip-card-front,
+  .flip-card-back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: transparent;
+    z-index: 2;
+    transition: opacity 0.3s ease, z-index 0s 0.6s;
+  }
+
+  .flip-card-inner.flipped .flip-card-front {
+    opacity: 0;
+    z-index: 1;
+}
+
+  .flip-card-back {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    padding: 0.5rem 1rem 1rem 1rem;
+    background-color: rgba(35, 38, 45, 1);
+    border-radius: 7px;
+    background-position: 100%;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    opacity: 0.7;
+    transform: rotateX(180deg);
+  }
+
+
+  .flip-card-front p,
+.flip-card-back p {
+    line-height: 1.2; /* Adjust this value to match your design */
+    margin: 0; /* Reset any margin */
+    padding: 0; /* Reset any padding */
+}
+
+.flip-card-front h2,
+.flip-card-back h2 {
+    line-height: 1.2; /* Ensure the same line-height */
+}
+
+  .wave {
+    font-size: 3rem;
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 5%;
+  }
+
+  @keyframes wave-animation {
+    0% { transform: rotate(0.0deg) }
+    10% { transform: rotate(14.0deg) }
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate(0.0deg) }
+    100% { transform: rotate(0.0deg) }
+  }
+
+  .headliner-container {
+    align-items: center;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(var(--accent-light), 0.25);
+    background: var(--card-background-purple);
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.0rem;
+    line-height: 1.4;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .headliner-container {
+        font-size: 0.9rem;
+        line-height: 1.3;
+    }
+}
+
+.upper {
+  display: flex;
+}
+
+@media (max-width: 480px) {
+    .headliner-container {
+        font-size: 0.8rem;
+        line-height: 1.2;
+    }
+}
+
+
+  .headliner code {
+    font-weight: bold;
+    background: rgba(var(--accent-light), 12%);
+    color: rgb(var(--accent-light));
+    border-radius: 4px;
+  }
+
+  .headliner strong {
+    color: rgb(var(--accent-light));
+  }
+
+  .interaction-text {
+    text-align: center;
+    color: grey;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    animation: float 2s ease-in-out infinite;
+}
+
+.desktop-text {
+    display: inline;
+}
+
+.mobile-text {
+    display: none;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop-text {
+        display: none;
+    }
+    .mobile-text {
+        display: inline;
+    }
+}
