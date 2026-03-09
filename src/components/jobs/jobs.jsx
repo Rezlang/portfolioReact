@@ -17,7 +17,7 @@ export default function Jobs() {
         <Tabs.Tab value="factset" leftSection={<img src={`${process.env.PUBLIC_URL}/factset.jpeg`} style={iconStyle} alt="Factset" />}>
           Factset
         </Tabs.Tab>
-        <Tabs.Tab value="craft">
+        <Tabs.Tab value="craft"leftSection={<img src={`${process.env.PUBLIC_URL}/craft.png`} style={iconStyle} alt="CRAFT" />}>
           CRAFT
         </Tabs.Tab>
         <Tabs.Tab value="scorec" leftSection={<img src={`${process.env.PUBLIC_URL}/rpi.png`} style={iconStyle} alt="RPI SCOREC" />}>
